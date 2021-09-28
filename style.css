@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  line-height: 1.5;
+  color: #28283d;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  --button1-bg-color: #4d96a9;
+  --button2-bg-color: #855fb1;
+  --button1hover-bg-color: #71c0d4;
+  --button2hover-bg-color: #b18bdd;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+
+a svg {
+  display: block;
+  margin: 3rem auto;
+}
+
+.hero-container .hero-image {
+  background: url("assets/tablet/image-hero.png") no-repeat center;
+  background-size: contain;
+  min-width: 110vw;
+  height: 12rem;
+  margin-left: -5%;
+  overflow-x: hidden;
+}
+
+.heading-section,
+article,
+.footer-content > p {
+  width: 85%;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.heading-section h1 {
+  font-size: 2.6rem;
+  padding: 0 1rem;
+  line-height: 1.2;
+  font-weight: 800;
+  margin: 0;
+}
+
+p {
+  color: #87879d;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+button {
+  width: 12rem;
+  display: block;
+  margin: 1.5rem auto;
+  padding: 0.9rem;
+  border-radius: 20px;
+  background-color: var(--button1-bg-color);
+  color: #fafafa;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--button1hover-bg-color);
+}
+
+.btn2 {
+  width: 8.6rem;
+  background-color: var(--button2-bg-color);
+}
+
+.btn2:hover {
+  background-color: var(--button2hover-bg-color);
+}
+
+span {
+  color: #8fe3f9;
+}
+
+.page-number-section {
+  width: 3.5rem;
+  height: 8.7rem;
+  margin: 1rem auto;
+}
+.page-number-section .vertical {
+  width: 50%;
+  height: 5.2rem;
+  border-right: 2px solid #d8d8d8;
+}
+
+.page-number-section .number {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 2px solid #d8d8d8;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0.8rem;
+  color: #87879d;
+  font-weight: 900;
+  background-color: #fafafa;
+}
+
+.image-container {
+  width: 90%;
+  display: grid;
+  grid-gap: 10px;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+article {
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.colour-paragraph {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--button1-bg-color);
+  font-weight: 600;
+}
+
+article h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+.footer-banner {
+  background: url(assets/mobile/image-footer.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.footer-content {
+  background-color: rgba(77, 150, 168, 0.9);
+  color: #fafafa;
+  padding: 3rem;
+  text-align: center;
+}
+h3 {
+  font-size: 2rem;
+}
+
+.footer-content > p {
+  color: #fafafa;
+}
+
+.bottom-number {
+  position: relative;
+  bottom: -3rem;
+}
+
+.footer-button {
+  width: 12rem;
+}
+
+.footer-button span {
+  color: #d9b8ff;
+}
+
+/*tablet style*/
+
+@media screen and (min-width: 768px) {
+  .hero-container .hero-image {
+    background: url("assets/tablet/image-hero.png") no-repeat center;
+    background-size: contain;
+    max-width: 100%;
+    min-width: 110vw;
+    height: 25.5rem;
+    margin-left: -5%;
+  }
+
+  .heading-section {
+    width: 28rem;
+    text-align: center;
+    margin: 2rem auto;
+  }
+  .heading-section h1 {
+    width: 22rem;
+    font-size: 3rem;
+    text-align: center;
+    margin: auto;
+  }
+
+  .image-container {
+    width: 43rem;
+    height: 9.75rem;
+    display: grid;
+    grid-gap: 15px;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 2rem auto;
+  }
+
+  article {
+    width: 35rem;
+    margin-top: 3rem;
+  }
+
+  article h2 {
+    width: 32rem;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .footer-content h3 {
+    width: 35.8rem;
+    font-size: 3rem;
+    margin: auto;
+  }
+
+  .footer-content p {
+    width: 35.8rem;
+    color: #fafafa;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .footer-banner {
+    background: url(assets/tablet/image-footer.jpg) no-repeat center;
+    background-size: cover;
+  }
+  button {
+    display: inline;
+    margin-right: 2.5rem;
+  }
+}
+
+/*desktop style*/
+
+@media screen and (min-width: 1190px) {
+  .hero-container .hero-image {
+    background: url("assets/desktop/image-hero-left.png"),
+      url("assets/desktop/image-hero-right.png");
+    background-position: 5% 50%, 96% 50%;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 25.5rem;
+  }
+  .heading-section {
+    margin-top: -320px;
+  }
+
+  .image-container {
+    width: 69rem;
+    height: 15rem;
+  }
+
+  .footer-banner {
+    background: url(assets/desktop/image-footer.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-content > h3,
+  .footer-content > p,
+  .footer-content > button {
+    margin-left: -80px;
+  }
+
+  h3,
+  .footer-content p {
+    width: 19.8rem;
+  }
+}
